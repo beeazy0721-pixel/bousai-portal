@@ -1,0 +1,89 @@
+:root {
+  --bg: #faf8f4;
+  --card: #ffffff;
+  --ink: #2b2b2b;
+  --sub: #5c5c5c;
+  --line: #e3ded2;
+  --accent: #c8502e;      /* 防災オレンジ */
+  --accent-soft: #fbeee8;
+  --blue: #2e5f8a;
+  --blue-soft: #e8f0f7;
+  --green: #3d7a44;
+  --green-soft: #eaf3ea;
+  --amber: #9a7414;
+  --amber-soft: #faf3da;
+  --radius: 14px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  line-height: 1.75; font-size: 16px;
+}
+a { color: var(--blue); }
+header.site {
+  background: var(--card); border-bottom: 1px solid var(--line);
+  padding: 18px 16px 14px;
+}
+header.site .brand { font-size: 22px; font-weight: 800; letter-spacing: .02em; }
+header.site .brand span { color: var(--accent); }
+header.site .tagline { color: var(--sub); font-size: 13.5px; margin-top: 2px; }
+main { max-width: 960px; margin: 0 auto; padding: 20px 16px 40px; }
+
+/* 発災時導線 */
+.emergency {
+  background: var(--accent-soft); border: 2px solid var(--accent);
+  border-radius: var(--radius); padding: 16px 18px; margin: 18px 0 26px;
+}
+.emergency .big { font-size: 18px; font-weight: 800; }
+.emergency p { margin: 6px 0 0; font-size: 14.5px; }
+
+/* カテゴリフィルタ */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 18px; }
+.filters button {
+  border: 1.5px solid var(--line); background: var(--card); color: var(--ink);
+  border-radius: 999px; padding: 9px 16px; font-size: 15px; cursor: pointer; min-height: 44px;
+}
+.filters button.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 700; }
+
+/* 記事グリッド */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 16px; }
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 18px; display: flex; flex-direction: column; gap: 8px;
+}
+.card .cat { font-size: 12.5px; font-weight: 700; align-self: flex-start; padding: 3px 10px; border-radius: 999px; }
+.cat-bag { background: var(--blue-soft); color: var(--blue); }
+.cat-gear { background: var(--green-soft); color: var(--green); }
+.cat-region { background: var(--amber-soft); color: var(--amber); }
+.cat-learn { background: #eee9f5; color: #5b4a8a; }
+.card h2 { font-size: 18px; margin: 0; line-height: 1.45; }
+.card h2 a { color: var(--ink); text-decoration: none; }
+.card p { margin: 0; color: var(--sub); font-size: 14.5px; flex: 1; }
+.card .meta { font-size: 12.5px; color: var(--sub); }
+.card .go { font-weight: 700; color: var(--accent); text-decoration: none; font-size: 15px; }
+.card.soon { opacity: .75; border-style: dashed; }
+
+/* 記事ページ */
+article.page { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px 22px; }
+article.page h1 { font-size: 24px; line-height: 1.5; margin: 4px 0 6px; }
+article.page h2 { font-size: 19px; margin: 28px 0 8px; border-left: 5px solid var(--accent); padding-left: 10px; }
+article.page .meta { color: var(--sub); font-size: 13px; }
+article.page ul { padding-left: 1.2em; }
+article.page li { margin: 4px 0; }
+.verdict { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 15px; }
+.verdict th, .verdict td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+.verdict th { background: var(--bg); }
+.mark { font-weight: 800; }
+.m-ok { color: var(--green); } .m-mid { color: var(--amber); } .m-ng { color: var(--accent); }
+.sources { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; font-size: 14px; margin-top: 30px; }
+.sources h3 { margin: 0 0 6px; font-size: 15px; }
+.sources ul { margin: 0; }
+.warn { background: var(--amber-soft); border: 1px solid #e5d491; border-radius: 10px; padding: 12px 16px; font-size: 14.5px; margin: 16px 0; }
+.back { display: inline-block; margin-top: 22px; font-weight: 700; }
+
+/* フッター */
+footer.site { border-top: 1px solid var(--line); background: var(--card); margin-top: 10px; }
+footer.site .inner { max-width: 960px; margin: 0 auto; padding: 22px 16px 30px; font-size: 13.5px; color: var(--sub); }
+footer.site h3 { font-size: 14px; color: var(--ink); margin: 14px 0 4px; }
+footer.site p { margin: 4px 0; }

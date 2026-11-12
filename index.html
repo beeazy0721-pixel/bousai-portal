@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>防災ミライラボ｜防災ポータル</title>
+<meta name="description" content="平常時は備えを学び、発災時は判断の材料にすぐたどり着くための防災ポータル。大阪市東淀川区を中心に、実体験と公的情報をもとにまとめています。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="brand">防災<span>ミライ</span>ラボ｜防災ポータル</div>
+  <div class="tagline">闇の中の被災者に、一筋の光を。平常時は備えを学ぶ場所、発災時は判断の入口です。</div>
+</header>
+<main>
+  <div class="emergency">
+    <div class="big">⚠ 災害が起きたときは</div>
+    <p>まず身の安全を確保してください。避難の判断には、自治体の避難情報と「防災コンパス」（開発中）を使えるよう準備を進めています。最新の公式情報は <a href="https://www.jma.go.jp/" target="_blank" rel="noopener">気象庁</a> と <a href="https://www.city.osaka.lg.jp/" target="_blank" rel="noopener">大阪市</a> のページで確認してください。</p>
+  </div>
+
+  <h1 style="font-size:20px;margin:0 0 4px;">記事一覧</h1>
+  <div class="filters" id="filters">
+    <button class="active" data-filter="all">すべて</button>
+    <button data-filter="bag">備蓄・防災バッグ</button>
+    <button data-filter="gear">命の道具</button>
+    <button data-filter="region">地域の備え</button>
+    <button data-filter="learn">学びの記録</button>
+  </div>
+
+  <div class="grid" id="grid">
+    <div class="card" data-cat="bag">
+      <span class="cat cat-bag">備蓄・防災バッグ</span>
+      <h2><a href="articles/bag.html">一人暮らしの防災バッグ、何を入れる？</a></h2>
+      <p>まずは「最初の72時間」をしのぐ袋づくりから。最低限の品目と、重さの目安、詰め込みすぎの注意点まで。</p>
+      <div class="meta">最終更新日：2026-11-12</div>
+      <a class="go" href="articles/bag.html">読む →</a>
+    </div>
+    <div class="card" data-cat="gear">
+      <span class="cat cat-gear">命の道具</span>
+      <h2><a href="articles/gear.html">サバゲー装備は災害時に使えるのか？ 実体験で判定</a></h2>
+      <p>ライト、無線機、リュック…。趣味の装備のうち災害時に本当に役立つものと、持ち出してはいけないものを実体験で判定します。</p>
+      <div class="meta">最終更新日：2026-11-12</div>
+      <a class="go" href="articles/gear.html">読む →</a>
+    </div>
+    <div class="card" data-cat="gear">
+      <span class="cat cat-gear">命の道具</span>
+      <h2><a href="articles/tourniquet.html">止血帯という道具を知る</a></h2>
+      <p>大出血のとき、命を左右するのは最初の数分です。止血の基本と、止血帯という道具の位置づけ、正規品を選ぶ理由をまとめました。</p>
+      <div class="meta">最終更新日：2026-11-12</div>
+      <a class="go" href="articles/tourniquet.html">読む →</a>
+    </div>
+    <div class="card" data-cat="region">
+      <span class="cat cat-region">地域の備え</span>
+      <h2><a href="articles/higashiyodogawa.html">東淀川区の備え：地震と淀川の水害</a></h2>
+      <p>淀川に接する東淀川区では、地震と水害の両方への備えが必要です。ハザードマップの確認手順と、避難情報の見方を整理しました。</p>
+      <div class="meta">最終更新日：2026-11-12</div>
+      <a class="go" href="articles/higashiyodogawa.html">読む →</a>
+    </div>
+    <div class="card soon" data-cat="learn">
+      <span class="cat cat-learn">学びの記録</span>
+      <h2>普通救命講習Ⅰを受けてきました（準備中）</h2>
+      <p>2026年11月21日に受講予定。心肺蘇生とAED、止血の基礎を学んだら、体験記として公開します。</p>
+      <div class="meta">公開予定：2026年11月下旬</div>
+    </div>
+  </div>
+</main>
+<footer class="site">
+  <div class="inner">
+    <h3>医療・救命情報について</h3>
+    <p>本サイトの応急手当・救命に関する情報は一般的な知識の紹介であり、医療指導ではありません。実際の場面では、講習で学んだ手順と医師・救急隊員の指示を優先してください。</p>
+    <h3>行政情報について</h3>
+    <p>避難所・ハザードマップ等の行政情報は、必ず自治体の公式ページで最新情報を確認してください。本サイトの情報は各記事の確認日時点のものです。</p>
+    <h3>一次情報へのリンク</h3>
+    <p><a href="https://www.jma.go.jp/" target="_blank" rel="noopener">気象庁</a> ／ <a href="https://www.kantei.go.jp/jp/headline/bousai/sonae.html" target="_blank" rel="noopener">首相官邸「災害への備え」</a> ／ <a href="https://www.city.osaka.lg.jp/" target="_blank" rel="noopener">大阪市</a></p>
+    <p>© 2026 防災ミライラボ</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
